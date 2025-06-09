@@ -8,7 +8,7 @@ class PodeBeber extends RegrasBase
         return $string == "beber";
     }
 
-    public function processar(string $regras)
+    public function processar(string $regras):?string
     {
         echo "passei por aqui " . __METHOD__ . " <br>";
         if ($this->podeProcessar($regras)) {

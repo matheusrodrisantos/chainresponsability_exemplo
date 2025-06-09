@@ -10,9 +10,10 @@ abstract class RegrasBase implements Regras
         $this->regras = $regras;
         return $regras;
     }
-    abstract protected function podeProcessar(string $texto):bool;
+    abstract protected function podeProcessar(string $texto): bool;
 
-    public function processar(string $texto){
+    public function processar(string $texto):?string
+    {
         if ($this->regras) {
             return $this->regras->processar($texto);
         }

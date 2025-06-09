@@ -9,9 +9,10 @@ class PodeComer extends RegrasBase
         return $string == "comer";
     }
 
-    public function processar(string $regras){
+    public function processar(string $regras): ?string
+    {
         echo "passei por aqui " . __METHOD__ . " <br>";
-        if($this->podeProcessar($regras)){
+        if ($this->podeProcessar($regras)) {
             return 'hhhhhhhhuuuuuuuuuuuuuuuummmmmmmmmm';
         }
 

@@ -9,7 +9,7 @@ class PodeDancar  extends RegrasBase
         return $string == "dancar";
     }
 
-    public function processar(string $regras)
+    public function processar(string $regras):?string
     {
         echo "passei por aqui " . __METHOD__ . " <br>";
         if ($this->podeProcessar($regras)) {
